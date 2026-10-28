@@ -1,0 +1,39 @@
+body {
+    background: url("https://cdn.imgchest.com/files/j7kzcbnrz7m.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("image-web-address");
+    /* Замените на адрес изображения, который прислал преподаватель */
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Разрешаем перенос элементов на новую строку при уменьшении ширины */
+}
+
+.container>* {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+
+    /* Настройки Flexbox для правильного заполнения пространства */
+    flex-basis: 200px;
+    /* Базовый размер каждого блока */
+    flex-shrink: 1;
+    /* Разрешаем сжатие блоков */
+    flex-grow: 1;
+    /* Разрешаем блокам расти, чтобы заполнить всю оставшуюся ширину строки */
+}
