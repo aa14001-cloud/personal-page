@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercyMed — Private Medical Centre in Bishkek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-icon">M</span>
+                <span class="logo-name">MERCYMED</span>
+            </a>
+
+            <nav class="nav" id="navMenu">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#team">Doctors</a>
+                <a href="#corporate">Corporate</a>
+                <a href="#contact" class="btn btn-primary btn-sm">Book Appointment</a>
+            </nav>
+
+            <button class="burger" id="burgerBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Evidence-Based & International Medicine</span>
+                <h1>Modern Healthcare for the Whole Family in Bishkek</h1>
+                <p>Compassionate, evidence-based outpatient care combining local expertise with international medical standards — treating body, mind, and spirit.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+                    <a href="#services" class="btn btn-outline">Explore Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>10+ Years</strong>
+                        <span>Mobile Clinics across KG</span>
+                    </div>
+                    <div class="stat">
+                        <strong>6 Languages</strong>
+                        <span>Multilingual Care</span>
+                    </div>
+                    <div class="stat">
+                        <strong>30% Off</strong>
+                        <span>Express Plus Lab Tests</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card-visual">
+                <div class="info-glass-card">
+                    <div class="card-header-dot">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot orange"></span>
+                    </div>
+                    <h3>Clinic Highlights</h3>
+                    <ul class="check-list">
+                        <li>No unnecessary antibiotics or outdated treatments</li>
+                        <li>Full English, Russian & Kyrgyz consultations</li>
+                        <li>In-house Ultrasound, EKG & Audiometry</li>
+                        <li>Certified Doula & Birth Preparation</li>
+                        <li>Official medical certificates for schools & travel</li>
+                    </ul>
+                    <div class="location-pill">
+                        📍 Tunguch Microdistrict (near Ayu Grand), Bishkek
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О клинике -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="sub-label">Who We Are</span>
+                <h2>Revolutionizing Healthcare in Kyrgyzstan</h2>
+                <p>Opened in October 2023, MercyMed brings together dedicated local and international doctors under one roof.</p>
+            </div>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="icon-box">🩺</div>
+                    <h3>Evidence-Based Care</h3>
+                    <p>We strictly follow international clinical guidelines and proven research, ensuring safe, transparent, and cost-effective treatment without over-prescribing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🌍</div>
+                    <h3>International Standards</h3>
+                    <p>Our physicians bring years of global medical practice, offering clear communication and detailed medical reports in six languages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">❤️</div>
+                    <h3>Charitable Mission</h3>
+                    <p>For over a decade, our team has organized mobile medical clinics across remote regions of Kyrgyzstan to serve communities in need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section bg-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="sub-label">Our Services</span>
+                <h2>Comprehensive Outpatient Care</h2>
+                <p>Select a category to view available diagnostics and consultations.</p>
+            </div>
+            <!-- Интерактивные вкладки услуг -->
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="adults">Adult Practice</button>
+                    <button class="tab-btn" data-tab="pediatrics">Pediatrics</button>
+                    <button class="tab-btn" data-tab="diagnostics">Diagnostics & Lab</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="adults">
+                        <div class="grid-3">
+                            <div class="feature-card"><h3>General Practice</h3><p>Evidence-based therapy, chronic disease management, and health screening.</p></div>
+                            <div class="feature-card"><h3>Cardiology</h3><p>EKG diagnostics, blood pressure monitoring, and heart health support.</p></div>
+                            <div class="feature-card"><h3>Neurology</h3><p>Treatment of headaches, back pain, and neurological disorders.</p></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pediatrics">
+                        <div class="grid-3">
+                            <div class="feature-card"><h3>Well-Child Care</h3><p>Growth tracking, vaccination schedules, and developmental assessments.</p></div>
+                            <div class="feature-card"><h3>Pediatric Consultation</h3><p>Safe, gentle treatment plans without unnecessary antibiotics.</p></div>
+                            <div class="feature-card"><h3>School Certificates</h3><p>Official medical documents for schools and kindergartens.</p></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="diagnostics">
+                        <div class="grid-3">
+                            <div class="feature-card"><h3>Ultrasound (USI)</h3><p>High-precision internal organ and soft tissue scanning.</p></div>
+                            <div class="feature-card"><h3>Express Lab Tests</h3><p>Comprehensive blood and infection tests with 30% discount offers.</p></div>
+                            <div class="feature-card"><h3>Audiometry</h3><p>Professional hearing testing in dedicated acoustic setting.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Врачи -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="sub-label">Our Specialists</span>
+                <h2>Expert Medical Team</h2>
+                <p>Multilingual physicians certified in international medical standards.</p>
+            </div>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <h3>Dr. Altynai S.</h3>
+                    <p><strong>General Practitioner / Family Doctor</strong></p>
+                    <p>Fluent in English, Russian, Kyrgyz. Specializes in evidence-based preventive care.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Dr. Timur K.</h3>
+                    <p><strong>Pediatrician & Neonatologist</strong></p>
+                    <p>Focuses on modern pediatric guidelines, infant development, and vaccination safety.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Elena M.</h3>
+                    <p><strong>Certified Doula & Birth Consultant</strong></p>
+                    <p>Supports families through prenatal preparation, birth planning, and postpartum care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корпоративным клиентам -->
+    <section id="corporate" class="section bg-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="sub-label">Business Solutions</span>
+                <h2>Corporate Healthcare</h2>
+                <p>Tailored medical packages, staff health insurance programs, and on-site checkups for international companies and local businesses in Bishkek.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и Интерактивная форма записи (Book Appointment) -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="sub-label">Get in Touch</span>
+                <h2>Book Your Appointment</h2>
+                <p>Fill out the form below to choose your doctor, date, and preferred time slot.</p>
+            </div>
+            
+            <div class="booking-wrapper">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number / WhatsApp</label>
+                            <input type="tel" required placeholder="+996 (XX) XXX-XXX">
+                        </div>
+                        <div class="form-group">
+                            <label>Select Specialist</label>
+                            <select id="doctorSelect">
+                                <option value="general">Dr. Altynai S. (General Practice)</option>
+                                <option value="pediatric">Dr. Timur K. (Pediatrics)</option>
+                                <option value="doula">Elena M. (Doula / Birth Prep)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Appointment Date</label>
+                            <input type="date" required id="appointmentDate">
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Time Slot</label>
+                            <select required>
+                                <option value="09:00">09:00 AM - 10:00 AM</option>
+                                <option value="11:00">11:00 AM - 12:00 PM</option>
+                                <option value="14:00">02:00 PM - 03:00 PM</option>
+                                <option value="16:00">04:00 PM - 05:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Language Preference</label>
+                            <select>
+                                <option>English</option>
+                                <option>Russian</option>
+                                <option>Kyrgyz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" style="margin-top: 24px;">Confirm Appointment Request</button>
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        ✅ Thank you! Your appointment request has been received. Our manager will contact you via WhatsApp/Phone shortly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Скрипты интерактивности -->
+    <script>
+        // 1. Мобильное меню
+        const burgerBtn = document.getElementById('burgerBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        burgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // 2. Интерактивные вкладки услуг (Services Tabs)
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanes.forEach(p => p.classList.remove('active'));
+
+                btn.classList.add('active');
+                const targetId = btn.getAttribute('data-tab');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        // 3. Обработка формы записи (Booking Form)
+        const bookingForm = document.getElementById('bookingForm');
+        const successMessage = document.getElementById('successMessage');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            bookingForm.querySelector('button').style.display = 'none';
+            successMessage.style.display = 'block';
+        });
+
+        // Установка минимальной даты в календаре на сегодня
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('appointmentDate').min = today;
+    </script>
+
+</body>
+</html>
